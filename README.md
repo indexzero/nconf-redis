@@ -30,6 +30,7 @@ The Redis engine also has an in-memory cache with a default TTL of one hour. To 
   // Requiring `nconf-redis` will extend the `nconf`
   // module.
   //
+  require('nconf-redis');
   
   nconf.use('redis', { host: 'localhost', port: 6379, ttl: 60 * 60 * 1000 });
 ```
