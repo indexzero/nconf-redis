@@ -56,7 +56,7 @@ vows.describe('nconf/stores/redis').addBatch({
         topic: function (store) {
           store.set('foo:array', data.arr, this.callback)
         },
-        "should respond without an": function (err, ok) {
+        "should respond without an error": function (err, ok) {
           assert.isNull(err);
         }
       },
