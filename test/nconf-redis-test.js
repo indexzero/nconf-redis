@@ -6,37 +6,13 @@
  */
 
 var vows = require('vows'),
-    assert = require('assert');
-
-try {
-  var nconf = require('nconf'),
-      data = require('nconf/test/fixtures/data').data,
-      merge = require('nconf/test/fixtures/data').merge;
-}
-catch (ex) {
-  var error = [
-    'Error running tests: ' + ex.message,
-    '',
-    'To run `nconf-redis` tests you need to`',
-    'install nconf locally in this project',
-    '',
-    '  cd ' + path.join(__dirname, '..'),
-    '  npm install nconf',
-    '  vows --spec',
-    '',
-    'OR',
-    '',
-    '  cd ' + path.join(__dirname, '..'),
-    '  npm test',
-    ''
-  ].join('\n');
-
-  console.log(error);
-  process.exit(1);
-}
+    assert = require('assert'),
+    nconf = require('nconf'),
+    data = require('nconf/test/fixtures/data').data,
+    merge = require('nconf/test/fixtures/data').merge;
 
 //
-// Require `nconf-redis` to extend `nconf
+// Require `nconf-redis` to extend `nconf`
 // 
 require('../lib/nconf-redis');
 
