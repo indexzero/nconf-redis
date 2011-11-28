@@ -18,7 +18,7 @@ require('../lib/nconf-redis');
 
 vows.describe('nconf/stores/redis').addBatch({
   "When using the nconf redis store": {
-    topic: new nconf.stores.Redis(),
+    topic: new nconf.Redis(),
     "the set() method": {
       "with a literal": {
         topic: function (store) {
@@ -56,7 +56,7 @@ vows.describe('nconf/stores/redis').addBatch({
   }
 }).addBatch({
   "When using the nconf redis store": {
-    topic: new nconf.stores.Redis(),
+    topic: new nconf.Redis(),
     "the get() method": {
       "with a literal value": {
         topic: function (store) {
@@ -102,7 +102,7 @@ vows.describe('nconf/stores/redis').addBatch({
   }
 }).addBatch({
   "When using the nconf redis store": {
-    topic: new nconf.stores.Redis(),  
+    topic: new nconf.Redis(),  
     "the clear() method": {
       topic: function (store) {
         var that = this;
@@ -122,7 +122,7 @@ vows.describe('nconf/stores/redis').addBatch({
   }
 }).addBatch({
   "When using the nconf redis store": {
-    topic: new nconf.stores.Redis(),  
+    topic: new nconf.Redis(),  
     "the save() method": {
       topic: function (store) {
         var that = this;
@@ -142,7 +142,7 @@ vows.describe('nconf/stores/redis').addBatch({
   }
 }).addBatch({
   "When using the nconf redis store": {
-    topic: new nconf.stores.Redis(),  
+    topic: new nconf.Redis(),  
     "the load() method": {
       topic: function (store) {
         store.load(this.callback);
@@ -155,7 +155,7 @@ vows.describe('nconf/stores/redis').addBatch({
   }
 }).addBatch({
   "when using the nconf redis store": {
-    topic: new nconf.stores.Redis(),
+    topic: new nconf.Redis(),
     "the merge() method": {
       "when overriding an existing literal value": {
         topic: function (store) {
@@ -216,7 +216,7 @@ vows.describe('nconf/stores/redis').addBatch({
   }
 }).addBatch({
   "When using the nconf redis store": {
-    topic: new nconf.stores.Redis(),  
+    topic: new nconf.Redis(),  
     "the reset() method": {
       topic: function (store) {
         var that = this;
