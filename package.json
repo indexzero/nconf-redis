@@ -1,7 +1,7 @@
 {
   "name": "nconf-redis",
   "description": "A Redis store for nconf",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
@@ -10,11 +10,11 @@
   "keywords": ["configuration", "key value store", "nconf", "redis"],
   "dependencies": {
     "async": "0.1.x",
-    "redis": "0.6.x"
+    "redis": "0.7.x"
   },
   "devDependencies": {
     "nconf": "0.5.x",
-    "vows": "0.5.x"
+    "vows": "0.6.x"
   },
   "main": "./lib/nconf-redis",
   "scripts": { "test": "vows test/*-test.js --spec" },
