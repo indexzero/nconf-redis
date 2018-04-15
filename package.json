@@ -9,12 +9,12 @@
   },
   "keywords": ["configuration", "key value store", "nconf", "redis"],
   "dependencies": {
-    "async": "0.1.x",
-    "redis": "0.7.x"
+    "async": "2.6.x",
+    "redis": "2.8.x"
   },
   "devDependencies": {
-    "nconf": "0.5.x",
-    "vows": "0.6.x"
+    "nconf": "0.10.x",
+    "vows": "0.8.x"
   },
   "license": "MIT",
   "main": "./lib/nconf-redis",
