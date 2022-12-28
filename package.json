@@ -1,23 +1,41 @@
 {
-  "name": "nconf-redis",
-  "description": "A Redis store for nconf",
-  "version": "0.3.1",
-  "author": "Charlie Robbins <charlie.robbins@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/indexzero/nconf-redis.git"
+  "author": {
+    "name": "Charlie Robbins",
+    "email": "charlie.robbins@gmail.com"
   },
-  "keywords": ["configuration", "key value store", "nconf", "redis"],
+  "bugs": {
+    "url": "https://github.com/indexzero/nconf-redis/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "async": "0.1.x",
     "redis": "0.7.x"
   },
+  "deprecated": false,
+  "description": "A Redis store for nconf",
   "devDependencies": {
+    "ioredis": "^5.2.4",
     "nconf": "0.5.x",
     "vows": "0.6.x"
   },
-  "license": "MIT",
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "homepage": "https://github.com/indexzero/nconf-redis#readme",
+  "keywords": [
+    "configuration",
+    "key value store",
+    "nconf",
+    "redis"
+  ],
   "main": "./lib/nconf-redis",
-  "scripts": { "test": "vows test/*-test.js --spec" },
-  "engines": { "node": ">= 0.4.0" }
+  "name": "nconf-redis",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/indexzero/nconf-redis.git"
+  },
+  "scripts": {
+    "test": "vows test/*-test.js --spec"
+  },
+  "version": "0.3.1"
 }
